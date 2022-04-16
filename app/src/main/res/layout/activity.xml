@@ -9,22 +9,24 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="300dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="490dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="490dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="352dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="354dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/rect_rounded_button"
         android:fontFamily="@font/opensans_bold"
         android:text="Manually Start"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
@@ -33,12 +35,12 @@
         android:fontFamily="@font/opensans_bold"
         android:text="Party mode!"
         android:textColor="#000000"
-        android:textSize="70sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/textView"
@@ -64,22 +66,23 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintHorizontal_bias="0.014"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.331" />
+        app:layout_constraintVertical_bias="0.329" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="478dp"
-        android:layout_height="295dp"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginBottom="70dp"
+        android:layout_width="493dp"
+        android:layout_height="257dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="13dp"
         android:fontFamily="@font/opensans_medium"
         android:text="FrameLayout is designed to block out an area on the screen to display a single item. Generally, FrameLayout should be used to hold a single child view, because it can be difficult to organize child views in a way that's scalable to different screen sizes without the children overlapping each other. You can, however, add multiple children to a FrameLayout and control their position within the FrameLayout by assigning gravity to each child, using the android:layout_gravity attribute."
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
@@ -88,33 +91,35 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="573dp"
-        android:layout_height="350dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="107dp"
-        android:layout_marginBottom="70dp"
+        android:layout_width="416dp"
+        android:layout_height="282dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="27dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="88dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="321dp"
-        android:layout_marginBottom="710dp"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="84dp"
         android:padding="0dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.312"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

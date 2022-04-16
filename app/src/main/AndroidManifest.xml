@@ -23,6 +23,8 @@
         <activity
             android:name=".Activity">
         </activity>
+        <activity
+            android:name=".Settings"/>
     </application>
 
 </manifest>
