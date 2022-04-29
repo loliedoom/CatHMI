@@ -11,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/opensans_bold"
-        android:text="Currently (activity)..."
+        android:text="Pixie the Cat!"
+        android:textColor="#FF5722"
         android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -21,10 +22,12 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="1040dp"
+        android:layout_height="97dp"
         android:fontFamily="@font/opensans_medium"
-        android:text="Walk near the exhibit to get started."
+        android:text="Oh no! Pixie the cat is sick with Hyposensory Deficiency (Lack of cuddles) and needs your help! Are you able to help Pixie?"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/opensans_medium"
-        android:text="The current session will be lost in # minutes if no activity is detected."
+        android:text="The exhibit is currently in standby mode. Keep an eye on power consumption."
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,5 +49,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.971" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to get started"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="458dp"
+        tools:layout_editor_absoluteY="516dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

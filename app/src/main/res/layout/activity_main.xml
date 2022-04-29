@@ -11,13 +11,15 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="244dp"
         android:fontFamily="@font/opensans_bold"
-        android:text="Hi I'm Tabby the Cat!"
+        android:text="Hi I'm Pixie the Cat!"
+        android:textColor="#DF4E21"
         android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.031" />
 
@@ -26,11 +28,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/opensans_medium"
-        android:text="All-time high score out of all patients: #"
+        android:text="Let's help Pixie get better!"
+        android:textColor="#FFFFFF"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.198" />
@@ -40,7 +43,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/opensans_medium"
-        android:text="Your current score: #"
+        android:text="0/4 Missions Completed"
+        android:textColor="#FFFFFF"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,14 +58,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="24dp"
         android:fontFamily="@font/opensans_medium"
-        android:text="Interact with the exhibit, or tap on one of the activites to learn more."
+        android:text="Avaliable Missions"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
         app:layout_constraintVertical_bias="0.0" />
@@ -71,13 +75,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/opensans_medium"
-        android:text="Tip: Insert Tip Here"
-        android:textSize="25sp"
+        android:text="This system is fully autonomous. To interact, use this tablet interface to complete missions or pet the cat and watch it respond."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.972" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
@@ -97,6 +104,28 @@
             android:orientation="horizontal">
 
             <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#FFFFFF"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/imgcomp" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#FFFFFF"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/colors" />
+
+            <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -104,7 +133,7 @@
                 android:background="#FFFFFF"
                 android:padding="0dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/imgcomp" />
+                android:src="@drawable/dancing" />
 
         </LinearLayout>
     </HorizontalScrollView>
@@ -119,29 +148,30 @@
         android:layout_marginBottom="6dp"
         android:background="@drawable/rect_rounded_button"
         android:fontFamily="@font/opensans_bold"
-        android:text="New Session"
+        android:text="Quit Session"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/imageButton18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
 
     <ImageButton
         android:id="@+id/imageButton18"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="416dp"
+        android:layout_marginStart="312dp"
         android:layout_marginTop="6dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="24dp"
         android:background="#00422222"
         android:padding="0dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:srcCompat="@android:drawable/ic_menu_preferences" />
 
