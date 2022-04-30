@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/opensans_medium"
-        android:text="0/4 Missions Completed"
+        android:text="Tap the mission to get started."
         android:textColor="#FFFFFF"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -114,65 +114,24 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/imgcomp" />
 
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="#FFFFFF"
-                android:padding="0dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/colors" />
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:background="#FFFFFF"
-                android:padding="0dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/dancing" />
 
         </LinearLayout>
     </HorizontalScrollView>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="152dp"
-        android:layout_height="105dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="6dp"
-        android:background="@drawable/rect_rounded_button"
-        android:fontFamily="@font/opensans_bold"
-        android:text="Quit Session"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:typeface="normal"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
-
-    <ImageButton
-        android:id="@+id/imageButton18"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="312dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="24dp"
-        android:background="#00422222"
-        android:padding="0dp"
-        android:scaleType="fitCenter"
+        android:layout_width="156dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="73dp"
+        android:text="New Session"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:srcCompat="@android:drawable/ic_menu_preferences" />
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

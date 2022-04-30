@@ -22,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        ImageButton androidImageButton = (ImageButton) findViewById(R.id.imageButton);
-        ImageButton androidImageButton18 = (ImageButton) findViewById(R.id.imageButton18);
+        ImageButton androidImageButton = (ImageButton) findViewById(R.id.imageButton3);
 
         androidImageButton.setOnClickListener(new View.OnClickListener() {
 
@@ -45,11 +44,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        androidImageButton18.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Settings.class));
-            }
-        });
     }
 }

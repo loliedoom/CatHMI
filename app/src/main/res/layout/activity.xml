@@ -7,27 +7,6 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="256dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="352dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="354dp"
-        android:layout_marginBottom="52dp"
-        android:background="@drawable/rect_rounded_button"
-        android:fontFamily="@font/opensans_bold"
-        android:text="Manually Start"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:typeface="normal"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -47,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/opensans_medium"
-        android:text="Your current score: #"
+        android:text="Pet the top of the cat to help Pixie!"
         android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,10 +45,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
+        app:layout_constraintVertical_bias="0.315" />
 
     <TextView
         android:id="@+id/textView11"
@@ -77,29 +56,15 @@
         android:layout_height="257dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="7dp"
-        android:layout_marginEnd="9dp"
         android:layout_marginBottom="13dp"
         android:fontFamily="@font/opensans_medium"
-        android:text="FrameLayout is designed to block out an area on the screen to display a single item. Generally, FrameLayout should be used to hold a single child view, because it can be difficult to organize child views in a way that's scalable to different screen sizes without the children overlapping each other. You can, however, add multiple children to a FrameLayout and control their position within the FrameLayout by assigning gravity to each child, using the android:layout_gravity attribute."
+        android:text="Pixie the cat is sick and needs your help! She is suffering from anticuddle syndrome! Pet Pixie to help her out."
         android:textColor="#000000"
         android:textSize="16sp"
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="416dp"
-        android:layout_height="282dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="27dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <ImageButton
         android:id="@+id/imageButton2"
